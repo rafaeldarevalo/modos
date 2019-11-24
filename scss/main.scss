@@ -140,17 +140,23 @@ table {
 
 body {
   font-family: "Helvetica Neue LT Std";
+  font-size: 16px;
 }
 
 h2 {
   font-weight: 300;
-  text-transform: uppercase;
+  
 }
-.container {
+
+/* -------------------------------------------------------------------------- */
+/*                                 PORTAFOLIO                                 */
+/* -------------------------------------------------------------------------- */
+
+.portafolio {
   background: #282828;
   display: grid;
 }
-.portafolio {
+.portafolio-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -160,6 +166,7 @@ h2 {
   h2 {
     font-size: 38px;
     margin-bottom: 50px;
+    text-transform: uppercase;
   }
   .portafolio-textos{
     padding-right: 40px;  
@@ -203,7 +210,6 @@ h2 {
   font-size: 1.5em;
 }
 .modosCol-1 {
-  border: 1px solid red;
   text-align: left;
   span {
     display: block;
@@ -215,12 +221,68 @@ h2 {
     }
   }
 }
-.modosCol-2 {
-  border: 1px solid blue;
+.modosCol-2 {}
+.modosCol-3 {}
+.modosCol-4 {}
+
+
+.anima {
+  opacity: 0;
+  -webkit-transform: translateY(120px);
+  -moz-transform: translateY(120px);
+  -ms-transform: translateY(120px);
+  -o-transform: translateY(120px);
+  transform: translateY(120px);
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
-.modosCol-3 {
-  border: 1px solid greenyellow;
+
+.anima.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 }
-.modosCol-4 {
-  border: 1px solid orange;
+
+/* -------------------------------------------------------------------------- */
+/*                                    MAPA                                    */
+/* -------------------------------------------------------------------------- */
+
+.mapa{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 60px;
+  text-align: center;
+  margin: 100px 330px;
+  text-align: left;
+  .descripcion{
+    padding-top: 30px;
+    h2{
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    h3{
+      font-size: 20px;
+      margin-bottom: 29px;
+      border-bottom: 1px solid #111;
+      padding-bottom: 10px;
+    }
+    h4{
+      
+      margin-bottom: 11px;
+    }
+    p{
+      margin-bottom: 27px;
+      font-size: 14px;
+    }
+    ul{
+      font-size: 14px;
+    }
+  }
+
 }

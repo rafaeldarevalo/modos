@@ -20,3 +20,13 @@
 //     signum[i].innerHTML = x;
 // }
 // console.log(signum);
+var revealElements = document.getElementsByClassName("anima");
+for (var i = 0; i < revealElements.length; i++) { 
+    new ScrollMagic.Scene({
+        triggerElement: revealElements[i], 
+        offset: 20,												
+    })
+        .setClassToggle(revealElements[i], "visible")
+        .addIndicators({ name: "anima " + (i + 1) })
+        .addTo(controller);
+}

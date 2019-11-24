@@ -133,55 +133,58 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "Helvetica Neue LT Std"; }
+  font-family: "Helvetica Neue LT Std";
+  font-size: 16px; }
 
 h2 {
-  font-weight: 300;
-  text-transform: uppercase; }
+  font-weight: 300; }
 
-.container {
+/* -------------------------------------------------------------------------- */
+/*                                 PORTAFOLIO                                 */
+/* -------------------------------------------------------------------------- */
+.portafolio {
   background: #282828;
   display: grid; }
 
-.portafolio {
+.portafolio-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   text-align: center;
   margin: 124px 50px;
   color: #fff; }
-  .portafolio h2 {
+  .portafolio-container h2 {
     font-size: 38px;
-    margin-bottom: 50px; }
-  .portafolio .portafolio-textos {
+    margin-bottom: 50px;
+    text-transform: uppercase; }
+  .portafolio-container .portafolio-textos {
     padding-right: 40px; }
-  .portafolio p {
+  .portafolio-container p {
     font-size: 28px;
     text-align: right; }
-  .portafolio p:nth-child(1) {
+  .portafolio-container p:nth-child(1) {
     margin-bottom: 450px;
     text-align: left; }
-  .portafolio p:nth-child(2) {
+  .portafolio-container p:nth-child(2) {
     margin-bottom: 630px; }
-  .portafolio p:nth-child(3) {
+  .portafolio-container p:nth-child(3) {
     line-height: 77px;
     margin-bottom: 320px; }
-  .portafolio p:nth-child(4) {
+  .portafolio-container p:nth-child(4) {
     margin-bottom: 130px; }
-  .portafolio p:nth-child(5) {
+  .portafolio-container p:nth-child(5) {
     margin-bottom: 290px; }
-  .portafolio img {
+  .portafolio-container img {
     width: auto;
     max-width: 100%;
     margin-bottom: 20px; }
-  .portafolio .portafolio-item img:last-child {
+  .portafolio-container .portafolio-item img:last-child {
     margin-bottom: 50px; }
 
 .modosCol {
   font-size: 1.5em; }
 
 .modosCol-1 {
-  border: 1px solid red;
   text-align: left; }
   .modosCol-1 span {
     display: block;
@@ -191,13 +194,53 @@ h2 {
       border-bottom: 1px solid #fff;
       display: inline; }
 
-.modosCol-2 {
-  border: 1px solid blue; }
+.anima {
+  opacity: 0;
+  -webkit-transform: translateY(120px);
+  -moz-transform: translateY(120px);
+  -ms-transform: translateY(120px);
+  -o-transform: translateY(120px);
+  transform: translateY(120px);
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out; }
 
-.modosCol-3 {
-  border: 1px solid greenyellow; }
+.anima.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none; }
 
-.modosCol-4 {
-  border: 1px solid orange; }
+/* -------------------------------------------------------------------------- */
+/*                                    MAPA                                    */
+/* -------------------------------------------------------------------------- */
+.mapa {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 60px;
+  text-align: center;
+  margin: 100px 330px;
+  text-align: left; }
+  .mapa .descripcion {
+    padding-top: 30px; }
+    .mapa .descripcion h2 {
+      font-size: 30px;
+      margin-bottom: 25px; }
+    .mapa .descripcion h3 {
+      font-size: 20px;
+      margin-bottom: 29px;
+      border-bottom: 1px solid #111;
+      padding-bottom: 10px; }
+    .mapa .descripcion h4 {
+      margin-bottom: 11px; }
+    .mapa .descripcion p {
+      margin-bottom: 27px;
+      font-size: 14px; }
+    .mapa .descripcion ul {
+      font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */
