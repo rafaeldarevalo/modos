@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap");
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("../font/HelveticaNeueLTStd-ThEx.woff2") format("woff2"),
+    url("../font/HelveticaNeueLTStd-ThEx.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Helvetica Neue LT Std";
+}
+
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.container {
+  background: #282828;
+  display: grid;
+}
+.portafolio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+  margin: 124px 50px;
+  color: #fff;
+  h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+  .portafolio-textos{
+    padding-right: 40px;  
+  }
+  p {
+    font-size: 28px;
+    text-align: right;
+  }
+  p:nth-child(1) {
+    margin-bottom: 450px;
+    text-align: left;
+  }
+  p:nth-child(2) {
+    margin-bottom: 630px;
+  }
+  p:nth-child(3) {
+    line-height: 77px;
+    margin-bottom: 320px;
+  }
+  p:nth-child(4) {
+    color: lightblue;
+    margin-bottom: 130px;
+    
+  }
+  p:nth-child(5) {
+    margin-bottom: 290px;
+    
+  }
+
+  img {
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .portafolio-item {
+    img:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
+.modosCol {
+  font-size: 1.5em;
+}
+.modosCol-1 {
+  border: 1px solid red;
+  text-align: left;
+  span {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    h2 {
+      border-bottom: 1px solid #fff;
+      display: inline;
+    }
+  }
+}
+.modosCol-2 {
+  border: 1px solid blue;
+}
+.modosCol-3 {
+  border: 1px solid greenyellow;
+}
+.modosCol-4 {
+  border: 1px solid orange;
+}
