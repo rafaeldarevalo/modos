@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap");
 @font-face {
   font-family: "Helvetica Neue LT Std";
   src: url("../font/HelveticaNeueLTStd-ThEx.woff2") format("woff2"), url("../font/HelveticaNeueLTStd-ThEx.woff") format("woff");
   font-weight: 100;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
