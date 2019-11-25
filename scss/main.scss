@@ -164,7 +164,7 @@ h2 {
   margin: 124px 50px;
   color: #fff;
   h2 {
-    font-size: 38px;
+    font-size: 34px;
     margin-bottom: 50px;
     text-transform: uppercase;
   }
@@ -285,4 +285,17 @@ h2 {
     }
   }
 
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+footer{
+  background: #282828;
+  color: #fff;
+  img{
+    width: 270px;
+    margin: 5px 40px
+  }
 }

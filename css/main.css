@@ -154,7 +154,7 @@ h2 {
   margin: 124px 50px;
   color: #fff; }
   .portafolio-container h2 {
-    font-size: 38px;
+    font-size: 34px;
     margin-bottom: 50px;
     text-transform: uppercase; }
   .portafolio-container .portafolio-textos {
@@ -242,5 +242,15 @@ h2 {
       font-size: 14px; }
     .mapa .descripcion ul {
       font-size: 14px; }
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+footer {
+  background: #282828;
+  color: #fff; }
+  footer img {
+    width: 270px;
+    margin: 5px 40px; }
 
 /*# sourceMappingURL=main.css.map */
