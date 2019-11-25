@@ -144,14 +144,15 @@ h2 {
 /* -------------------------------------------------------------------------- */
 .portafolio {
   background: #282828;
-  display: grid; }
+  display: grid;
+  position: relative; }
 
 .portafolio-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   text-align: center;
-  margin: 124px 50px;
+  margin: 124px 50px 50px 50px;
   color: #fff; }
   .portafolio-container h2 {
     font-size: 34px;
@@ -214,6 +215,14 @@ h2 {
   -ms-transform: none;
   -o-transform: none;
   transform: none; }
+
+.somos {
+  position: absolute;
+  bottom: 70px;
+  right: 30px;
+  font-size: 23px; }
+  .somos span {
+    font-size: 47px; }
 
 /* -------------------------------------------------------------------------- */
 /*                                    MAPA                                    */
