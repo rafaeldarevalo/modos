@@ -245,9 +245,11 @@ h2 {
     color: #fff;
     text-align: center;
     padding: 40px 0; }
-    .modos-exhibicion .modos-exhibicion-iconos img {
-      width: 120px;
-      margin-bottom: 32px; }
+    .modos-exhibicion .modos-exhibicion-iconos .icono {
+      margin-bottom: 32px;
+      min-height: 120px; }
+      .modos-exhibicion .modos-exhibicion-iconos .icono img {
+        width: 120px; }
     .modos-exhibicion .modos-exhibicion-iconos h2 {
       font-size: 24px;
       margin-bottom: 32px; }
@@ -424,5 +426,32 @@ footer {
   footer img {
     width: 270px;
     margin: 5px 40px; }
+
+.block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px; }
+
+.block h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: white;
+  font-weight: 400; }
+
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none; }
 
 /*# sourceMappingURL=main.css.map */
