@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Helvetica Neue LT Std";
   src: url("../font/HelveticaNeueLTStd-ThEx.woff2") format("woff2"), url("../font/HelveticaNeueLTStd-ThEx.woff") format("woff");
@@ -244,7 +245,7 @@ h2 {
     background: #282828;
     color: #fff;
     text-align: center;
-    padding: 40px 0; }
+    padding: 40px; }
     .modos-exhibicion .modos-exhibicion-iconos .icono {
       margin-bottom: 32px;
       min-height: 120px; }
@@ -255,7 +256,7 @@ h2 {
       margin-bottom: 32px; }
 
 /* -------------------------------------------------------------------------- */
-/*                                   EPACIO                                   */
+/*                                   ESPACIO                                   */
 /* -------------------------------------------------------------------------- */
 .espacio {
   display: grid;
@@ -263,10 +264,27 @@ h2 {
   height: 600px; }
   .espacio .espacio-img-1 {
     background: url("../img/espacio-1.jpg") 100% 100%;
-    background-size: cover; }
+    background-size: cover;
+    position: relative; }
+    .espacio .espacio-img-1 p {
+      font-size: 32px; }
+    .espacio .espacio-img-1 p:nth-child(1) {
+      position: absolute;
+      left: 40px;
+      top: 20px; }
+    .espacio .espacio-img-1 p:nth-child(2) {
+      position: absolute;
+      left: 180px;
+      top: 50px;
+      font-size: 40px; }
   .espacio .espacio-img-2 {
     background: url("../img/espacio-2.jpg") 0 100%;
     background-size: cover; }
+    .espacio .espacio-img-2 p {
+      text-align: center;
+      margin-top: 254px;
+      font-size: 40px;
+      padding-left: 50px; }
   .espacio .espacio-texto {
     background: #0090D1;
     color: #fff;
@@ -279,6 +297,47 @@ h2 {
       margin-bottom: 50px; }
     .espacio .espacio-texto span {
       font-size: 24px; }
+
+/* -------------------------------------------------------------------------- */
+/*                                   DISE├æO                                   */
+/* -------------------------------------------------------------------------- */
+.disenio {
+  display: grid;
+  grid-template-columns: repeat(3, 20% 60% 20%);
+  height: 600px; }
+  .disenio .disenio-texto {
+    margin: 90px 0 0 50px; }
+    .disenio .disenio-texto p {
+      margin-bottom: 20px; }
+  .disenio .disenio-img {
+    background: url("../img/disenio.jpg") 100% 100% no-repeat;
+    background-size: 100%;
+    position: relative; }
+    .disenio .disenio-img .texto {
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: -100px;
+      font-size: 30px; }
+  .disenio .disenio-nuevos {
+    background: #0090D1;
+    color: #fff;
+    padding: 90px 20px 45px 20px;
+    position: relative; }
+    .disenio .disenio-nuevos p {
+      position: absolute;
+      bottom: 70px;
+      left: 40px;
+      font-size: 30px;
+      line-height: 40px; }
+      .disenio .disenio-nuevos p span {
+        font-size: 44px; }
+
+.publico {
+  padding: 50px 300px; }
 
 /* -------------------------------------------------------------------------- */
 /*                                 PORTAFOLIO                                 */
@@ -361,27 +420,6 @@ h2 {
   transition: all 0.6s ease-out; }
 
 .anima.visible {
-  opacity: 1;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none; }
-
-.animaHorizontal {
-  opacity: 0;
-  -webkit-transform: translateX(120px);
-  -moz-transform: translateX(120px);
-  -ms-transform: translateX(120px);
-  -o-transform: translateX(120px);
-  transform: translateX(120px);
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out; }
-
-.animaHorizontal.visible {
   opacity: 1;
   -webkit-transform: none;
   -moz-transform: none;
