@@ -226,7 +226,7 @@ h2 {
 .modos{
   display: grid;
   width: 60%;
-  margin: 25px auto;
+  margin: 50px auto;
   grid-template-columns: repeat(2, 110px auto);
   grid-gap: 20px;
   
@@ -252,7 +252,7 @@ h2 {
 .modos-exhibicion{
   display: grid;
   grid-template-columns: repeat(2, 25% 75%);
-  margin-bottom: 100px;
+  
   margin-left: 40px;
   column-gap: 30px;
   .logo-exhibicion{
