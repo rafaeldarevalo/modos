@@ -7,219 +7,672 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modos</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 
     <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.jss"></script>
-    <script> var controller = new ScrollMagic.Controller();</script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
-</head>
-<body>
-    <section class="banner">
-        <header class="menu" >
-            <h2 class="logo"><img src="img/logo-principal.svg" alt=""  class="img-responsive" ></h2>
-            <ul class="nav">
-                <li>
-                    <a href="">INICIO</a>
-                </li>
-                <li>
-                    <a href="">PORTAFOLIO</a>
-                </li>
-                <li>
-                    <a href="">CONTÁCTANOS</a>
-                </li>
-                <li>
-                    <a href="">UBICACIÓN</a>
-                </li>
-             </ul>
-        </header>
-        <img class="thumbnail img-responsive" src="img/banner.webp" alt="image">
-        <div class="logo-banner">
-            <img  src="img/logo-banner.svg" alt="">  
-        </div>
-    </section>
-    <section class="modos">
-         <h2>
-             Modos
-         </h2>
-         <div class="modos-texto">
-             <p>Pasó de abordar el producto como consecuencia del proyecto a volverlo la estrategia vertebral<br>generando nuevos portafolios para sus clientes y los clientes finales, acelerando ventas.  </p>
-         </div>
-    </section>
-    <section class="modos-exhibicion anima">
-        <img class="logo-exhibicion" src="img/modos-exhibicion.svg" alt="">
-        <div class="modos-exhibicion-iconos " >
-            <div>
-                <div class="icono">
-                    <img src="img/exhibicion-1.svg" alt="">
-                </div>
-                <h2>IDesign<br>MODOS</h2>
-                <p>espacios + experiencias</p>
-            </div>
-            <div>
-                <div class="icono">
-                    <img src="img/exhibicion-2.svg" alt="">
-                </div>
-                <h2>PROYECTOS<br>INMOBILIARIOS</h2>
-                <p>espacios + experiencias</p>
-            </div>
-            <div>
-                <div class="icono">
-                    <img src="img/exhibicion-3.svg" alt="">
-                </div>
-                <h2>Agencia</h2>
-                <p>Experiencia de marca</p>
-            </div>
-        </div>
-    </section>
-    <section class="espacio anima">
-        <div class="espacio-img-1">
-               <p>Más que un espacio</p>
-               <p>Una experiencia</p> 
-        </div>
-        <div class="espacio-texto">
-            <h2>En <span>modos</span> transformamos espacios para construir significados</h2>
-            <img src="img/spacios.svg" alt="">
-            <p>Somos un aliado estratégico que aporta valor desde el diseño experiencial a espacios enfocados en captar los sentidos y emociones de los clientes y así crear una experiencia <span>única</span></p>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>var controller = new ScrollMagic.Controller();</script>
 
+</head>
+
+<body>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 MOBILE                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="hide-desktop">
+        <div class="menu-m">
+            <img class="close" src="img/close.svg" alt="">
+            <ul>
+                <li>
+                    <a class="toscroll link-m" href="#inicio-m">INICIO</a>
+                </li>
+                <li>
+                    <a class="toscroll link-m" href="#portafolio-m">PORTAFOLIO</a>
+                </li>
+                <li>
+                    <a class="toscroll link-m" href="#contactanos-m">CONTÁCTANOS</a>
+                </li>
+
+            </ul>
         </div>
-        <div class="espacio-img-2">
-            <p>IDesign<br>MODOS</p>
+        <div class="open-menu hide-desktop ">
+            <div class="btn"></div>
+            <div class="logo-mobile">
+                <img class="img-responsive" src="img/logo-contacto.svg" alt="">
+            </div>
         </div>
-    </section>
-    <section class="disenio anima">
-        <div class="disenio-texto">
+        <section class="banner" id="inicio-m">
+            <img class="thumbnail img-responsive" src="img/m-PORTADA.webp" alt="image">
+            <div class="banner-texto">
+                <p>Pasó de abordar el producto como consecuencia del proyecto a volverlo la estrategia vertebral
+                    generando nuevos portafolios para sus clientes y los clientes finales, acelerando ventas</p>
+            </div>
+            <div class="modos-exhibicion-m">
+                <img class="responsive" src="img/logo-principal.svg" alt="">
+
+                <div>
+                    <img class="responsive" src="img/exhibicion-1.svg" alt="">
+                </div>
+                <div>
+                    <img class="responsive" src="img/exhibicion-2.svg" alt="">
+                </div>
+                <div>
+                    <img class="responsive" src="img/exhibicion-3.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 section                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <section class="idesign-m anima ">
+            <img src="img/espacios.svg" alt="">
+            <h2>IDesign MODOS</h2>
+            <h3>espacios + experiencias</h3>
+            <div class="divider"></div>
+            <p>En <span>modos</span> transformamos<br> espacios para construir significados</p>
+        </section>
+        <section class="spacio-m img-general anima">
+            <p>Más que un espacio</p>
+            <p>Una experiencia</p>
+        </section>
+        <section class="somos-m anima">
+            <p>Somos un aliado estratégico que aporta
+                valor desde el diseño experiencial a espacios
+                enfocados en captar los sentidos y
+                emociones de los clientes y así crear una eexperiencia<br>experiencia <span>Única</span></p>
+            <div class="divider"></div>
+            <img class="arrow" src="img/arrow.svg" alt="">
+            <div class="somos-col">
+                <article>
+                    <p>Diseño de espacios<br>interiores + exteriores</p>
+                    <p>Rehabilitación,<br>Adecuación de espacios<br>de trabajo y ofcina</p>
+                </article>
+
+                <article>
+                    <p>Diseño de espacios<br>Cormerciales</p>
+                    <p>Stands, locales<br>comerciales, cadenas y<br>franquicias</p>
+                </article>
+
+                <article>
+                    <p>Diseño de eventos y<br>espacios emeros</p>
+                    <p>Dirección y gestión<br>de obras</p>
+                </article>
+            </div>
+        </section>
+        <section class="publico-m anima">
+            <p>Tu público objetivo es nuestro reto trabajamos en conjunto con
+                nuestros clientes, para crear diseños capaces de transmitir
+                simplicidad y consistencia para captar la atención del público
+                objetivo. </p>
+        </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 section                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <section class="proyectos-inmobiliarios-m anima">
+            <img src="img/enproyectos.svg" alt="">
+            <h2>PROYECTOS<br>INMOBILIARIOS</h2>
+            <h3>consultoria + desarrollo</h3>
+            <div class="divider"></div>
+            <p>Estructuramos y promocionamos proyectos
+                de vivienda e inversión.</p>
+        </section>
+        <section class="proyectos-inmobiliarios-img-m img-general anima"></section>
+        <section class="proyectos-inmobiliarios-texto-m anima">
+            <h2>
+                100% ESPECIALIZADOS EN EL SECTOR INMOBILIARIO
+            </h2>
+            <p>
+                Ofrecemos a nuestros clientes una solución integral para la realización, estructuración y promoción de
+                proyectos contemplando los aspectos técnicos, estéticos y logísticos
+            </p>
+        </section>
+        <section class="publico-m anima">
+            <p>Trabajamos en conjunto con nuestros clientes para transformar
+                sus marcas mediante herramientas innovadoras, análisis de
+                información y estrategias de contenido, </p>
+        </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 section                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <section class="elfaro-m anima">
+            <img src="img/enproyectos.svg" alt="">
+            <img src="img/elfaro.svg" alt="">
+            <a href="http://www.elfaroapartamentos.com/" target="_blank">www.elfaroapartamentos.com</a>
+        </section>
+        <section class="elfaro-img-m img-general anima"></section>
+        <section class="elfaro-texto-m anima">
+            <h2> Encuentra un gran lugar para ti.</h2>
+            <h2>La combinación perfecta entre comodidad, precio y diversión.</h2>
+            <article class="elfaro-iconos-m">
+                <div class="corazon-m">
+                    <img src="img/faro-1.svg" alt="">
+                    <h2>Corazón de Flandes Piscina
+                        y Girardot</h2>
+                </div>
+                <div class="iconos-m icon-1">
+                    <img src="img/faro-2.svg" alt="">
+                    <p>Dos torres de 10 y 11 pisos,<br>
+                        132 apartamentos</p>
+                </div>
+                <div class="iconos-m icon-2">
+                    <img src="img/faro-3.svg" alt="">
+                    <p>Parqueaderos Ascensor<br>
+                        Cubiertos*</p>
+                </div>
+                <div class="iconos-m icon-3">
+                    <img src="img/faro-4.svg" alt="">
+                    <p>Piscina</p>
+                </div>
+                <div class="iconos-m icon-4">
+                    <img src="img/faro-5.svg" alt="">
+                    <p>Ascensor</p>
+                </div>
+                <div class="iconos-m icon-5">
+                    <img src="img/faro-6.svg" alt="">
+                    <p>Zona BBQ<br>
+                        10° piso con<br>
+                        mirador</p>
+                </div>
+            </article>
+            <p class="disclaimer-m">*El proyecto entregará 132 parqueaderos que serán gestionados por la administración
+                del conjunto residencial.</p>
+        </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 section                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <section class="agencia-m anima">
+            <img src="img/agencia.svg" alt="">
+            <h2>AGENCIA </h2>
+            <h3>experiencias de marca</h3>
+            <div class="divider"></div>
+            <p>Damos valor a proyectos y marcas de forma
+                visual, siendo capaces de comunicar simple y
+                consistente una experiencia única que impacte
+                y conecte con la audiencia transmitiendo los
+                valores diferenciadores que los caracteriza.</p>
+        </section>
+        <section class="agencia-img-m img-general anima"></section>
+        <section class="agencia-texto-m anima">
+            <p>
+                <span>Nuestro objetivo</span>: el crecimiento,
+                posicionamiento y consolidación de tu marca.
+            </p>
+            <p>
+                Somos un aliado estratégico que aporta valor
+                desde el diseño experiencial a espacios
+                enfocados en captar los sentidos y emociones
+                de los clientes y así crear una experiencia única.
+            </p>
+        </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                PORTAFOLIO                               -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <section class="portafolio-m" id="portafolio-m">
+            <div class="portafolio-title">
+                <h2>
+                    PORTAFOLIO
+                </h2>
+            </div>
+            <p>
+                El reflejo de la experiencia es la satisfacción de nuestros clientes.
+            </p>
+
+            <div class="portafolio-m-container">
+                <div class="modosCol">
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">SIGNUM 93</h2>
+                        <img class="anima" src="img/portafolio/counity-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/counity-2.webp" alt="">
+                    </div>
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">INTEGRA</h2>
+                        <img class="anima" src="img/portafolio/integra-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/integra-2.webp" alt="">
+                    </div>
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">EL FARO</h2>
+                        <img class="anima" src="img/portafolio/elfaro-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/elfaro-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/elfaro-3.webp" alt="">
+                        <img class="anima" src="img/portafolio/elfaro-4.webp" alt="">
+                    </div>
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">TEEKA</h2>
+                        <img class="anima" src="img/portafolio/teeka-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/teeka-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/teeka-3.webp" alt="">
+                    </div>
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">IKA</h2>
+                        <img class="anima" src="img/portafolio/ika-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/ika-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/ika-3.webp" alt="">
+                    </div>
+
+
+                </div>
+                <div class="modosCol">
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">MITIKA</h2>
+                        <img class="anima" src="img/portafolio/mitika-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/mitika-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/mitika-3.webp" alt="">
+                        <!-- <img class="anima" src="img/portafolio/mitika-4.webp" alt=""> -->
+                        <!-- <img class="anima" src="img/portafolio/mitika-5.webp" alt=""> -->
+                        <!-- <img class="anima" src="img/portafolio/mitika-6.webp" alt=""> -->
+                    </div>
+
+
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">GO</h2>
+                        <img class="anima" src="img/portafolio/go-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/go-2.webp" alt="">
+                        <!-- <img class="anima" src="img/portafolio/go-3.webp" alt=""> -->
+                    </div>
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">NARCOBOLLO</h2>
+                        <img class="anima" src="img/portafolio/narcobollo-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/narcobollo-2.webp" alt="">
+                    </div>
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">VIAO</h2>
+                        <img class="anima" src="img/portafolio/viao-1.webp" alt="">
+                        <!-- <img class="anima" src="img/portafolio/viao-2.webp" alt=""> -->
+                        <img class="anima" src="img/portafolio/viao-3.webp" alt="">
+                        <!-- <img class="anima" src="img/portafolio/viao-4.webp" alt=""> -->
+                    </div>
+                    <div class="portafolio-m-item">
+                        <h2 class="anima">OPTIMA</h2>
+                        <img class="anima" src="img/portafolio/optima-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/optima-2.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="portafolio-somos-m">
+                somos <span>modos</span> exhibición inmobiliaria
+            </div>
+        </section>
+        <section class="escribenos anima" id="contactanos-m">
+            <img src="img/logo-contacto.svg" alt="">
+            <h2>Escríbenos</h2>
+            <form action="enviar.php" method="POST">
+                <input type="text" placeholder="Nombre" name="nombre" value="" required>
+                <input type="email" placeholder="e-mail" name="email" value="" required>
+                <input type="tel" placeholder="# celuar" name="celular" value="" required>
+                <p>
+                    Bogotá, Colombia<br>
+                    Calle 93 # 19 - 55 We Work<br>
+                    contacto@modos.com.co<br>
+                    (+57) 310 786 6763<br>
+                </p>
+                <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <section class="redes-m">
+            <h2>Síguenos</h2>
+            <div class="redes-m-iconos">
+                <a href="#" target="_blank"><img src="img/s-facebook.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="img/s-instagram.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="img/s-twitter.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="img/s-whatsapp.svg" alt=""></a>
+            </div>
+        </section>
+        <section class="copy-m">
+            <p>Copyright © MODOS</p>
+        </section>
+        <img src="img/m-espacio.webp" class="img-responsive anima" alt="">
+        <img src="img/proyectos-inmobiliarios.webp" class="img-responsive anima" alt="">
+        <img src="img/m-FARO.webp" class="img-responsive anima" alt="">
+        <img src="img/m-agencia.webp" class="img-responsive anima" alt="">
+        <img src="img/m-DECK.webp" class="img-responsive anima" alt="">
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 DESKTOP                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="hide-mobile">
+        <section class="banner" id="inicio">
+            <div class="menu">
+
+                <h2 class="logo"><img src="img/logo-principal.svg" alt="" class="img-responsive"></h2>
+                <ul class="nav">
+                    <li>
+                        <a class="toscroll" href="#inicio">INICIO</a>
+                    </li>
+                    <li>
+                        <a class="toscroll" href="#portafolio">PORTAFOLIO</a>
+                    </li>
+                    <li>
+                        <a class="toscroll" href="#contactanos">CONTÁCTANOS</a>
+                    </li>
+                    <li>
+                        <a class="toscroll" href="#ubicacion">UBICACIÓN</a>
+                    </li>
+                </ul>
+            </div>
+            <img class="thumbnail img-responsive hide-mobile" src="img/banner.webp" alt="image">
+
+            <div class="logo-banner">
+                <img src="img/logo-banner.svg" alt="">
+            </div>
+        </section>
+        <section class="modos">
+            <h2>
+                Modos
+            </h2>
+            <div class="modos-texto">
+                <p>Pasó de abordar el producto como consecuencia del proyecto a volverlo la estrategia
+                    vertebral<br>generando nuevos portafolios para sus clientes y los clientes finales, acelerando
+                    ventas.
+                </p>
+            </div>
+        </section>
+        <section class="modos-exhibicion anima">
+            <img class="logo-exhibicion" src="img/modos-exhibicion.svg" alt="">
+            <div class="modos-exhibicion-iconos ">
+                <div>
+                    <div class="icono">
+                        <img src="img/exhibicion-1.svg" alt="">
+                    </div>
+                    <h2>IDesign<br>MODOS</h2>
+                    <p>espacios + experiencias</p>
+                </div>
+                <div>
+                    <div class="icono">
+                        <img src="img/exhibicion-2.svg" alt="">
+                    </div>
+                    <h2>PROYECTOS<br>INMOBILIARIOS</h2>
+                    <p>espacios + experiencias</p>
+                </div>
+                <div>
+                    <div class="icono">
+                        <img src="img/exhibicion-3.svg" alt="">
+                    </div>
+                    <h2>Agencia</h2>
+                    <p>Experiencia de marca</p>
+                </div>
+            </div>
+        </section>
+        <section class="espacio anima">
+            <div class="espacio-img-1">
+                <p>Más que un espacio</p>
+                <p>Una experiencia</p>
+            </div>
+            <div class="espacio-texto">
+                <h2>En <span>modos</span> transformamos<br> espacios para construir significados</h2>
+                <img src="img/espacios.svg" alt="">
+                <p>Somos un aliado estratégico que<br> aporta valor desde el diseño<br> experiencial a espacios
+                    enfocados<br> en captar
+                    los sentidos y emociones<br> de los clientes y así crear una<br> experiencia <span>única</span></p>
+
+            </div>
+            <div class="espacio-img-2">
+                <p>IDesign<br>MODOS</p>
+            </div>
+        </section>
+        <section class="disenio anima">
+            <div class="disenio-texto">
                 <p>Diseño de espacios<br>interiores + exteriores</p>
                 <p>Diseño de espacios<br>Cormerciales</p>
                 <p>Rehabilitación,<br>Adecuación de espacios<br>de trabajo y ofcina</p>
                 <p>Diseño de eventos y<br>espacios emeros</p>
                 <p>Stands, locales<br>comerciales, cadenas y<br>franquicias</p>
                 <p>Dirección y gestión<br>de obras</p>
-        </div>
-        <div class="disenio-img">
+            </div>
+            <div class="disenio-img">
                 <div class="texto">
-                        <p>+ PROPONER</p>
-                        <p>+ DESARROLLAR</p>
-                        <p>+ IMPLEMENTAR</p>
+                    <p>+ PROPONER</p>
+                    <p>+ DESARROLLAR</p>
+                    <p>+ IMPLEMENTAR</p>
                 </div>
-        </div>
-        <div class="disenio-nuevos">
-            <p>NUEVOS E<br>INNOVADORES<br><span>ESPACIOS</span></p>
-        </div>
-    </section>
-    <section class="publico">
-        <p>
+            </div>
+            <div class="disenio-nuevos">
+                <p>NUEVOS E<br>INNOVADORES<br><span>ESPACIOS</span></p>
+            </div>
+        </section>
+        <section class="publico">
+            <p>
                 Tu público objetivo es nuestro reto trabajamos en conjunto con nuestros clientes, para crear diseños<br>
-                capaces de transmitir simplicidad y consistencia para captar la atención del público objetivo. 
-        </p>
-    </section>
-    <section class="portafolio">
-        <div class="portafolio-container">
-            <div class="modosCol modosCol-1 anima">
-                <span>
-                    <h2>PORTAFOLIO</h2>
-                </span>
-                <article class="portafolio-textos">
-                    <p>El reflejo de la<br>experiencia es la<br>satisfacción de<br> nuestros clientes.</p>
-                    <p>Nuestro portafolio<br> va desde</p>
-                    <p>diseño de interiores<br>experiencias<br>zonas comúnes
-                        ambién</p>
-                    <p>mobiliario<br>multifuncional </p>
-                    <p>marca<br>y promoción</p>
-                </article>
-            </div>
-            <div class="modosCol modosCol-2">
-                <div class="portafolio-item">
-                    <h2 class="anima">SIGNUM 93</h2>
-                    <img class="anima" src="img/portafolio/counity-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/counity-2.webp" alt="">
-                </div>
-                <div class="portafolio-item">
-                    <h2 class="anima">INTEGRA</h2>
-                    <img class="anima" src="img/portafolio/integra-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/integra-2.webp" alt="">
-                </div>
-                <div class="portafolio-item">
-                    <h2 class="anima">EL FARO</h2>
-                    <img class="anima" src="img/portafolio/elfaro-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/elfaro-2.webp" alt="">
-                    <img class="anima" src="img/portafolio/elfaro-3.webp" alt="">
-                    <img class="anima" src="img/portafolio/elfaro-4.webp" alt="">
-                </div>
-                <div class="portafolio-item">
-                    <h2 class="anima">IKA</h2>
-                    <img class="anima" src="img/portafolio/ika-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/ika-2.webp" alt="">
-                    <img class="anima" src="img/portafolio/ika-3.webp" alt="">
-                </div>
-            </div>
-            <div class="modosCol modosCol-3">
-                <div class="portafolio-item">
-                    <h2 class="anima">MITIKA</h2>
-                    <img class="anima" src="img/portafolio/mitika-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/mitika-2.webp" alt="">
-                    <img class="anima" src="img/portafolio/mitika-3.webp" alt="">
-                    <img class="anima" src="img/portafolio/mitika-4.webp" alt="">
-                    <img class="anima" src="img/portafolio/mitika-5.webp" alt="">
-                    <img class="anima" src="img/portafolio/mitika-6.webp" alt="">
-                </div>
-                <div class="portafolio-item">
-                    <h2 class="anima">TEEKA</h2>
-                    <img class="anima" src="img/portafolio/teeka-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/teeka-2.webp" alt="">
-                    <img class="anima" src="img/portafolio/teeka-3.webp" alt="">
-                </div>
-                <div class="portafolio-item">
-                    <h2 class="anima">OPTIMA</h2>
-                    <img class="anima" src="img/portafolio/optima-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/optima-2.webp" alt="">
-                </div>
-            </div>
-            <div class="modosCol modosCol-4">
-                <div class="portafolio-item">
-                    <h2 class="anima">GO</h2>
-                    <img class="anima" src="img/portafolio/go-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/go-2.webp" alt="">
-                    <img class="anima" src="img/portafolio/go-3.webp" alt="">
-                </div>
-                <div class="portafolio-item">
-                    <h2 class="anima">NARCOBOLLO</h2>
-                    <img class="anima" src="img/portafolio/narcobollo-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/narcobollo-2.webp" alt="">
-                </div>
-                <div class="portafolio-item">
-                    <h2 class="anima">VIAO</h2>
-                    <img class="anima" src="img/portafolio/viao-1.webp" alt="">
-                    <img class="anima" src="img/portafolio/viao-2.webp" alt="">
-                    <img class="anima" src="img/portafolio/viao-3.webp" alt="">
-                    <img class="anima" src="img/portafolio/viao-4.webp" alt="">
-                </div>
-            </div>
-            <div class="somos">
-                somos <span>modos</span> exhibición inmobiliaria
-            </div>
-        </div>
-    </section>
-    <section class="mapa">
-        <div class="descripcion">
-            <h2>Nuestro espacio</h2>
-            <h3>contáctanos!</h3>
-            <h4>Bogotá, Colombia</h4>
-            <p>Calle 93 #19-55<br>edf. wework ofcina 3-10</p>
-            <ul>
-                <li>comercial@modos.com.co</li>
-                <li>email: felipe@modos.com.co</li>
-                <li>phone: +57 310 7866763</li>
-            </ul>
+                capaces de transmitir simplicidad y consistencia para captar la atención del público objetivo.
+            </p>
+        </section>
 
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5219363148813!2d-74.05771632301119!3d4.678951343170608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aece2c53b11%3A0xc176b7d8f78ffb9!2sWeWork!5e0!3m2!1ses-419!2sco!4v1574630769346!5m2!1ses-419!2sco" width="" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </section>
-    <footer>
-        <img src="img/logo-footer.svg" alt=""> 
-    </footer>
+        <section class="enproyectos anima">
+            <div class="enproyectos-texto">
+
+                <div class="texto">
+                    <p>
+                        100%<br>
+                        ESPECIALIZADOS EN<br>
+                        EL SECTOR<br>
+                        INMOBILIARIO</p>
+
+
+                    <p>SOLUCIÓNES<br>
+                        INTEGRALES</p>
+                </div>
+
+            </div>
+            <div class="enproyectos-img"></div>
+            <div class="enproyectos-nuevos">
+                <P>En <span>proyectos</span><br>
+                    <span>inmobiliarios</span>, estructuramos
+                    y promocionamos proyectos de
+                    vivienda e inversión.</P>
+                <img src="img/enproyectos.svg" alt="">
+                <p>
+                    Ofrecemos a nuestros clientes una<br>
+                    solución integral para la realización,<br>
+                    estructuración y promoción de<br>
+                    proyectos, contemplando los aspectos<br>
+                    <span>técnicos, estéticos y<br>
+                        logísticos</span>
+                </p>
+
+            </div>
+        </section>
+        <section class="center">
+            <p>
+                Trabajamos en conjunto con nuestros clientes para transformar sus marcas mediante
+                herramientas<br>innovadoras, análisis de información y estrategias de contenido.
+            </p>
+        </section>
+        <section class="proximamente anima">
+            <div class="proximamente-img">
+                <h2>Próximamente</h2>
+            </div>
+            <div class="proximamente-texto">
+                <p>Nuevo Proyecto </p>
+                <p>Chapinero - Bogotá</p>
+            </div>
+        </section>
+        <section class="agencia anima">
+            <div class="agencia-img"></div>
+            <div class="agencia-texto">
+                <img src="img/agencia.svg" alt="">
+                <p>como <span>agencia,</span> damos valor a<br>
+                    proyectos y marcas de forma visual,<br>
+                    siendo capaces de comunicar simple<br>
+                    y consistente una experiencia única<br>
+                    que impacte y conecte con la<br>
+                    audiencia transmitiendo los valores<br>
+                    diferenciadores que los caracteriza. </p>
+            </div>
+        </section>
+
+        <section class="objetivo anima">
+            <div class="objetivo-img-1"></div>
+            <div class="objetivo-texto">
+                <p>Nuestro objetivo: el <span>crecimiento,</span><br>
+                    <span>posicionamiento y consolidación</span><br>
+                    de tu <span>marca</span>.</p>
+
+                <p>Pensamos diferente<br>
+                    Somos parte de los cambios</p>
+
+                <p>Somos un aliado estratégico que aporta<br>
+                    valor desde el diseño experiencial a<br>
+                    espacios enfocados en captar los<br>
+                    sentidos y emociones de los clientes y<br>
+                    así crear una experiencia <span>única</span>.</p>
+            </div>
+            <div class="objetivo-img-2"></div>
+        </section>
+        <section class="contactenos anima" id="contactanos">
+            <div class="contactenos-img-1"></div>
+            <div class="contactenos-texto">
+
+                <img src="img/logo-contacto.svg" alt="">
+                <h2>
+                    contáctanos!
+                </h2>
+
+                <h3>
+                    Bogotá, Colombia
+                </h3>
+                <p>Calle 93 #19-55
+                    edf. wework ocina 3-10</p>
+
+                <a href="mailto:felipe@modos.com.co">email: felipe@modos.com.co</a>
+                <a href="mailto:comercial@modos.com.co">comercial@modos.com.co</a>
+                <a href="tel+57 310 7866763">phone: +57 310 7866763</a>
+            </div>
+            <div class="contactenos-img-2"></div>
+        </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                PORTAFOLIO                               -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <section class="portafolio" id="portafolio">
+            <div class="portafolio-container">
+                <div class="modosCol modosCol-1 anima">
+                    <span>
+                        <h2>PORTAFOLIO</h2>
+                    </span>
+                    <article class="portafolio-textos">
+                        <p>El reflejo de la<br>experiencia es la<br>satisfacción de<br> nuestros clientes.</p>
+                        <p>Nuestro portafolio<br> va desde</p>
+                        <p>diseño de interiores<br>experiencias<br>zonas comúnes
+                            ambién</p>
+                        <p>mobiliario<br>multifuncional </p>
+                        <p>marca<br>y promoción</p>
+                    </article>
+                </div>
+                <div class="modosCol modosCol-2">
+                    <div class="portafolio-item">
+                        <h2 class="anima">SIGNUM 93</h2>
+                        <img class="anima" src="img/portafolio/counity-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/counity-2.webp" alt="">
+                    </div>
+                    <div class="portafolio-item">
+                        <h2 class="anima">INTEGRA</h2>
+                        <img class="anima" src="img/portafolio/integra-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/integra-2.webp" alt="">
+                    </div>
+                    <div class="portafolio-item">
+                        <h2 class="anima">EL FARO</h2>
+                        <img class="anima" src="img/portafolio/elfaro-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/elfaro-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/elfaro-3.webp" alt="">
+                        <img class="anima" src="img/portafolio/elfaro-4.webp" alt="">
+                    </div>
+                    <div class="portafolio-item">
+                        <h2 class="anima">IKA</h2>
+                        <img class="anima" src="img/portafolio/ika-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/ika-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/ika-3.webp" alt="">
+                    </div>
+                </div>
+                <div class="modosCol modosCol-3">
+                    <div class="portafolio-item">
+                        <h2 class="anima">MITIKA</h2>
+                        <img class="anima" src="img/portafolio/mitika-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/mitika-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/mitika-3.webp" alt="">
+                        <img class="anima" src="img/portafolio/mitika-4.webp" alt="">
+                        <img class="anima" src="img/portafolio/mitika-5.webp" alt="">
+                        <img class="anima" src="img/portafolio/mitika-6.webp" alt="">
+                    </div>
+                    <div class="portafolio-item">
+                        <h2 class="anima">TEEKA</h2>
+                        <img class="anima" src="img/portafolio/teeka-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/teeka-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/teeka-3.webp" alt="">
+                    </div>
+                    <div class="portafolio-item">
+                        <h2 class="anima">OPTIMA</h2>
+                        <img class="anima" src="img/portafolio/optima-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/optima-2.webp" alt="">
+                    </div>
+                </div>
+                <div class="modosCol modosCol-4">
+                    <div class="portafolio-item">
+                        <h2 class="anima">GO</h2>
+                        <img class="anima" src="img/portafolio/go-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/go-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/go-3.webp" alt="">
+                    </div>
+                    <div class="portafolio-item">
+                        <h2 class="anima">NARCOBOLLO</h2>
+                        <img class="anima" src="img/portafolio/narcobollo-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/narcobollo-2.webp" alt="">
+                    </div>
+                    <div class="portafolio-item">
+                        <h2 class="anima">VIAO</h2>
+                        <img class="anima" src="img/portafolio/viao-1.webp" alt="">
+                        <img class="anima" src="img/portafolio/viao-2.webp" alt="">
+                        <img class="anima" src="img/portafolio/viao-3.webp" alt="">
+                        <img class="anima" src="img/portafolio/viao-4.webp" alt="">
+                    </div>
+                </div>
+                <div class="somos">
+                    somos <span>modos</span> exhibición inmobiliaria
+                </div>
+            </div>
+        </section>
+        <section class="mapa" id="ubicacion">
+            <div class="descripcion">
+                <h2>Nuestro espacio</h2>
+                <h3>contáctanos!</h3>
+                <h4>Bogotá, Colombia</h4>
+                <p>Calle 93 #19-55<br>edf. wework ofcina 3-10</p>
+                <ul>
+                    <li>comercial@modos.com.co</li>
+                    <li>email: felipe@modos.com.co</li>
+                    <li>phone: +57 310 7866763</li>
+                </ul>
+
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5219363148813!2d-74.05771632301119!3d4.678951343170608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aece2c53b11%3A0xc176b7d8f78ffb9!2sWeWork!5e0!3m2!1ses-419!2sco!4v1574630769346!5m2!1ses-419!2sco"
+                width="" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+        <footer>
+            <img src="img/logo-footer.svg" alt="">
+        </footer>
+    </div>
 
     <script src="assets/app.js"></script>
-    
+
 </body>
 
 </html>
