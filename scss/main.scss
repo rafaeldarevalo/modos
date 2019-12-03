@@ -195,7 +195,7 @@ h2 {
 
 .banner {
   display: grid;
-  // background: url('../img/banner.webp') no-repeat;
+  // background: url('../img/banner.jpg') no-repeat;
   // background-size: cover;
   // min-height: 800px;
   .logo-banner {
@@ -325,7 +325,7 @@ h2 {
   grid-template-columns: repeat(3, 60% 20% 20%);
   height: 600px;
   .espacio-img-1 {
-    background: url("../img/espacio-1.webp") 100% 100%;
+    background: url("../img/espacio-1.jpg") 100% 100%;
     background-size: cover;
     position: relative;
     p {
@@ -344,7 +344,7 @@ h2 {
     }
   }
   .espacio-img-2 {
-    background: url("../img/espacio-2.webp") 0 100%;
+    background: url("../img/espacio-2.jpg") 0 100%;
     background-size: cover;
     p {
       text-align: center;
@@ -387,7 +387,7 @@ h2 {
     }
   }
   .disenio-img {
-    background: url("../img/disenio.webp") 100% 100% no-repeat;
+    background: url("../img/disenio.jpg") 100% 100% no-repeat;
     background-size: cover;
     position: relative;
     .texto {
@@ -449,7 +449,7 @@ h2 {
     
   }
   .enproyectos-img {
-    background: url("../img/enproyectos.webp") 100% 100% no-repeat;
+    background: url("../img/enproyectos.jpg") 100% 100% no-repeat;
     background-size: cover;
     position: relative;
     order: 2;
@@ -486,7 +486,7 @@ h2 {
   grid-template-columns: repeat(2, 65% 35%);
   height: 600px;
   .proximamente-img{
-    background:url('../img/proximamente.webp') no-repeat 100% center;
+    background:url('../img/proximamente.jpg') no-repeat 100% center;
     background-size: cover;
     position: relative;
     h2{
@@ -522,7 +522,7 @@ h2 {
   grid-template-columns: repeat(2, 70% 30%);
   height: 600px;
   .agencia-img{
-    background:url('../img/agencia.webp') no-repeat 100% 100%;
+    background:url('../img/agencia.jpg') no-repeat 100% 100%;
     background-size: cover;
     position: relative;
     
@@ -556,11 +556,11 @@ h2 {
   grid-template-columns: repeat(3, 15% 30% 55%);
   height: 600px;
   .objetivo-img-1{
-    background:url('../img/objetivo-1.webp') 100% 100%;
+    background:url('../img/objetivo-1.jpg') 100% 100%;
     background-size: cover;
   }
   .objetivo-img-2{
-    background:url('../img/objetivo-2.webp') 100% 100%;
+    background:url('../img/objetivo-2.jpg') 100% 100%;
     background-size: cover;
   }
   .objetivo-texto{
@@ -598,12 +598,12 @@ h2 {
   grid-template-columns: repeat(3, 55% 30% 15%);
   height: 600px;
   .contactenos-img-1{
-    background:url('../img/contacto-1.webp') 100% 100%;
+    background:url('../img/contacto-1.jpg') 100% 100%;
     background-size: cover;
    
   }
   .contactenos-img-2{
-    background:url('../img/contacto-2.webp') 100% 100%;
+    background:url('../img/contacto-2.jpg') 100% 100%;
     background-size: cover;
      
   }
