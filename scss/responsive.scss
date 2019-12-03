@@ -91,13 +91,16 @@
   left: 2%;
   padding: 20px 5px;
   background: #282828;
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   img:nth-child(1) {
     align-self: center;
+    width: 40%;
   }
   div{
+    width: 19%;
     text-align: center;
     border-right: 1px solid rgb(117, 117, 117);
     &:last-child{
