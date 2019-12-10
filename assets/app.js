@@ -37,15 +37,12 @@ var revealElements = document.getElementsByClassName("anima");
 var revealElementsHorizontal = document.getElementsByClassName("animaHorizontal");
 for (var i = 0; i < revealElements.length; i++) { 
     new ScrollMagic.Scene({
-        triggerElement: revealElements[i], 
-        triggerElementHorizontal: revealElementsHorizontal[i], 
+        triggerElement: revealElements[i],  
         offset: -300,												
     })
 
     
         .setClassToggle(revealElements[i], "visible")
-        .setClassToggle(revealElementsHorizontal[i], "visible")
-        .addIndicators({ name: "anima " + (i + 1) })
         .addTo(controller);
 }
 
